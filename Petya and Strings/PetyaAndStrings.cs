@@ -1,11 +1,14 @@
 using System;
-class program
+namespace Code
 {
-    static void Main(string[]args)
+    class Petya
     {
-         string firstName = Console.ReadLine().ToLower();
+        static void Main(string[] args)
+        {
+            string firstName = Console.ReadLine().ToLower();
             string secondName = Console.ReadLine().ToLower();
-      
+
             Console.WriteLine(firstName.CompareTo(secondName));
+        }
     }
 }

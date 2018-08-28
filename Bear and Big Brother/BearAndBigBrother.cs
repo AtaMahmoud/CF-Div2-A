@@ -1,9 +1,11 @@
 using System;
 
-class Program
+namespace Code
 {
-   static void Main(string[]args)
+    class Program
     {
+        static void Main(string[] args)
+        {
             int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), Int32.Parse);
             int limakWeight = a[0];
             int bearWeight = a[1];
@@ -30,6 +32,7 @@ class Program
 
             }
             Console.WriteLine(i);
+        }
+
     }
-    
 }

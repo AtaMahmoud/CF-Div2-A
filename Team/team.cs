@@ -1,10 +1,11 @@
 using System;
-
-class program
+namespace Code
 {
-    static void Main(string[]args)
+    class Team
     {
-         int numberOfProblem;
+        static void Main(string[] args)
+        {
+            int numberOfProblem;
             numberOfProblem = int.Parse(Console.ReadLine());
             int[,] problems = new int[numberOfProblem, 3];
             int numberOfSolutions = 0;
@@ -31,5 +32,7 @@ class program
 
             }
             Console.WriteLine(numberOfSolutions);
+        }
     }
+
 }

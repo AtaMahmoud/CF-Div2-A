@@ -1,9 +1,11 @@
 using System;
 using System.Linq;
-class Program
+namespace Code
 {
-   static void Main(string[]args)
+    class Vanya
     {
+        static void Main(string[] args)
+        {
             int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), Int32.Parse);
             int n = a[0];
             int h = a[1];
@@ -18,6 +20,8 @@ class Program
             }
 
             Console.WriteLine(width.Sum());
+        }
+
     }
-    
+
 }

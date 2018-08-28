@@ -1,12 +1,16 @@
 using System;
 using System.Text;
-class program
+namespace Code
 {
-    static void Main(string[] args)
+    class WordCapWithStBuilder
     {
-        StringBuilder name = new StringBuilder(Console.ReadLine());
+        static void Main(string[] args)
+        {
+            StringBuilder name = new StringBuilder(Console.ReadLine());
             if (name[0] >= 'a')
                 name[0] = Convert.ToChar(name[0] - 32);
             Console.WriteLine(name);
+        }
     }
+
 }

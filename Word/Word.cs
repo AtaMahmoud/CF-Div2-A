@@ -1,10 +1,13 @@
 using System;
-class program
+
+namespace Code
 {
-    static void Main(string[]args)
+    class word
     {
-        string word = Console.ReadLine();
-            
+        static void Main(string[] args)
+        {
+            string word = Console.ReadLine();
+
             int upperCaseCounter = 0;
             int lowerCaseCounter = 0;
             for (int i = 0; i < word.Length; i++)
@@ -14,11 +17,13 @@ class program
                 else if (word[i] >= 'A')
                     upperCaseCounter++;
             }
-            if(lowerCaseCounter>upperCaseCounter)
+            if (lowerCaseCounter > upperCaseCounter)
                 Console.WriteLine(word.ToLower());
-            else if(lowerCaseCounter<upperCaseCounter)
+            else if (lowerCaseCounter < upperCaseCounter)
                 Console.WriteLine(word.ToUpper());
             else
                 Console.WriteLine(word.ToLower());
+        }
     }
+
 }

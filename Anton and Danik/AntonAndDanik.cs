@@ -1,9 +1,10 @@
 using System;
-
-class Program
+namespace Code
 {
-   static void Main(string[]args)
+    class Antone
     {
+        static void Main(string[] args)
+        {
             int n;
             string resultOfGames;
             int Anton = 0;
@@ -23,6 +24,8 @@ class Program
                 Console.WriteLine("Danik");
             else
                 Console.WriteLine("Friendship");
+        }
+
     }
-    
+
 }

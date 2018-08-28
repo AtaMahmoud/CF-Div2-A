@@ -1,10 +1,12 @@
 using System;
 
-class program
+namespace Code
 {
-    static void Main(string[]args)
+    class program
     {
-        int[,] Matrix = new int[5, 5];
+        static void Main(string[] args)
+        {
+            int[,] Matrix = new int[5, 5];
             int rowNumber = 0;
             int columnNumber = 0;
             int rowSwaps = 0;
@@ -30,7 +32,7 @@ class program
                     }
                 }
             }
-            
+
 
             if (rowNumber == 2)
                 rowSwaps = 0;
@@ -41,7 +43,7 @@ class program
                     rowNumber--;
                     rowSwaps++;
                 }
-                    
+
                 while (rowNumber < 2)
                 {
                     rowNumber++;
@@ -58,16 +60,17 @@ class program
                     columnNumber--;
                     columnSwaps++;
                 }
-                   
+
                 while (columnNumber < 2)
                 {
                     columnNumber++;
                     rowSwaps++;
                 }
             }
-           
-         
 
-            Console.WriteLine(rowSwaps+columnSwaps);
+
+
+            Console.WriteLine(rowSwaps + columnSwaps);
+        }
     }
 }
