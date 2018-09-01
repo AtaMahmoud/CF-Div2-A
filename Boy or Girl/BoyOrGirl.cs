@@ -1,30 +1,19 @@
 using System;
+using System.Linq;
 namespace Code
 {
     class BoyOrGirlProblem
     {
         public static void Main(string[] args)
         {
-            string message = Console.ReadLine();
-            int distinctCharsNumber = 0;
-            int Length=message.Length;
-            for (int i = 0; i < message.Length; i++)
-            {
-                for (int j = 0; j < Length; j++)
-                {
-                    Length--;
-                    if (i == j)
-                        continue;
+            string name = Console.ReadLine();
+            int distinctChars = name.Distinct().Count();
 
-                    if (message[i] != message[j])
-                        distinctCharsNumber++;
-                }
-            }
-
-            if (distinctCharsNumber % 2 == 0)
-                System.Console.WriteLine("CHAT WITH HER!");
+            if (distinctChars % 2 == 0)
+                Console.WriteLine("CHAT WITH HER!");
             else
-                System.Console.WriteLine("IGNORE HIM!");
+                Console.WriteLine("IGNORE HIM!");
+
         }
     }
 }
