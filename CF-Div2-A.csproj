@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <StartupObject>Code.PoliceRecruits</StartupObject>
+    <StartupObject>Code.BlackSquare</StartupObject>
   </PropertyGroup>
 
 </Project>
